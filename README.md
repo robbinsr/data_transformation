@@ -1,7 +1,7 @@
 tidyData
 ========
 
-This is the result of the project for the course "Getting and Cleaning Data." The CodeBook is in the tidyData folder. The file run_analysis.R is in the tidyData folder. The results of running the run_eanalysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged, and all of these are public and under github.com/robbinsr/.
+This is the result of the project for the course "Getting and Cleaning Data." The CodeBook is in the tidyData folder. The file run_analysis.R is in the tidyData folder. The results of running the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged, and all of these are public and under github.com/robbinsr/.
 
 The instructions asked us to:
 
