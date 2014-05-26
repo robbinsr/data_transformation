@@ -1,6 +1,14 @@
 tidyData
 ========
 
+run_analysis.R is in this repo.
+The tidyCodeBook in xlsx and pdf form is in this repo.
+This README explains my process.
+The merged files are in http://github.com/robbinsr/tidyMerged.
+The extracted files are in http://github.com/robbinsr/tidyExtracted.
+The averaged files are in http://github.com/robbinsr/tidyAveraged.
+It was necessary to use more than one repo because of GitHub's 1 GB repo size constraint.
+
 This is the result of the project for the course "Getting and Cleaning Data." The CodeBook is in the tidyData folder. The file run_analysis.R is in the tidyData folder. The results of running the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged, and all of these are public and under github.com/robbinsr/.
 
 The instructions asked us to:
