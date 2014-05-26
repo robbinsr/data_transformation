@@ -12,7 +12,7 @@ setActivityNamesByObs<-function(actsByObs){
         }
         assign("actsByObs",actsByObs,.GlobalEnv)
         
-        print("P")
+        
         
 }
 
@@ -22,32 +22,32 @@ getData <- function(observationsFile, variablesFile, SubjectsByObjsFile, Activit
         
         tempObservations<-read.table(observationsFile,sep="",header=FALSE)
         assign("tempObservations",tempObservations,.GlobalEnv)
-        print("A")
+        
         
         variables<-read.table(variablesFile, sep="", header=FALSE)
-        print("B")
+        
         
         variableNames<-character(0)
-        print("C")
+        
         
         variableNames<-as.character(variables[,2])
         assign("variableNames",variableNames,.GlobalEnv)
-        print("D")
+        
         
         tempSubjsByObs<-read.table(SubjectsByObjsFile,sep="", header=FALSE)
         assign("tempSubjsByObs",tempSubjsByObs,.GlobalEnv)
-        print("E")
+        
         
         tempActsByObs<-read.table(ActivitiesByObjsFile,sep="", header=FALSE)
         assign("tempActsByObs",tempActsByObs,.GlobalEnv)
-        print("F")
+        
         
         activityNames<-read.table(activitiesFile, sep="", header=FALSE)
         assign("activityNames",activityNames,.GlobalEnv)
-        print("H")
+        
         
         colnames(activityNames)<-c("Number","Name")
-        print("I")
+        
         
         
 }
@@ -60,23 +60,23 @@ clarifyVariableNames <- function (variableNames){
         tempVariableNames<-variableNames
         
         for(i in 1:length(tempVariableNames)){
-                print("E")
-                print("Outer")
+                
+                
                 if(grepl("[b][a][n][d][s][E][n][e][r][g][y]",variableNames[i])){
-                        print("First")
+                        
                         x<-variableNames[i]
                         assign("x",x,.GlobalEnv)
-                        print("G")
+                        
                         variableNames[i]<-paste(variableNames[i],"A", sep="")
                         assign("variableNames",variableNames,.GlobalEnv)
                         
-                        print("H")
+                        
                         for(j in 1:length(tempVariableNames)){
-                                print("Middle")
+                                
                                 if(variableNames[j]==x){
-                                        print("Second")
+                                        
                                         y<-variableNames[j]
-                                        print("K")
+                                        
                                         assign("y",y,.GlobalEnv)
                                         variableNames[j]<-paste(variableNames[j],"B", sep="")
                                         
@@ -85,13 +85,13 @@ clarifyVariableNames <- function (variableNames){
                                                 
                                                 assign("variableNames",variableNames,.GlobalEnv)
                                                 
-                                                print("L")
+                                                
                                                 for(k in 1:length(tempVariableNames)){
-                                                        print("Inner")
+                                                        
                                                         if(variableNames[k]==variableNames[j]){
-                                                                print("Third")
+                                                                
                                                                 z<-variableNames[k]
-                                                                print("M")
+                                                                
                                                                 assign("z",z,.GlobalEnv)
                                                                 variableNames[k]<-paste(variableNames[k],"C", sep="")
                                                                 assign("variableNames",variableNames,.GlobalEnv)
@@ -129,36 +129,36 @@ clarifyVariableNames <- function (variableNames){
         }
         
         for(i in 1:length(tempVariableNames)){
-                print("E")
-                print("Outer2")
+                
+                
                 if(!grepl("[b][a][n][d][s][E][n][e][r][g][y]",variableNames[i])){
                         if(grepl("[A][c][c]",variableNames[i])){
-                                print("First2")
+                                
                                 x<-variableNames[i]
                                 assign("x",x,.GlobalEnv)
-                                print("G")
+                                
                                 variableNames[i]<-paste(variableNames[i],"A", sep="")
                                 assign("variableNames",variableNames,.GlobalEnv)
                                 
-                                print("H")
+                                
                                 for(j in 1:length(tempVariableNames)){
-                                        print("Middle2")
+                                        
                                         if(identical(variableNames[j],x)){
-                                                print("Second2")
+                                                
                                                 
                                                 y<-variableNames[j]
-                                                print("K")
+                                                
                                                 assign("y",y,.GlobalEnv)
                                                 variableNames[j]<-paste(variableNames[j],"B", sep="")
                                                 assign("variableNames",variableNames,.GlobalEnv)
                                                 
-                                                print("L")
+                                                
                                                 for(k in 1:length(tempVariableNames)){
-                                                        print("Inner2")
+                                                        
                                                         if(isTRUE(all.equal(variableNames[k],variableNames[j]))){
-                                                                print("Third2")
+                                                                
                                                                 z<-variableNames[k]
-                                                                print("M")
+                                                                
                                                                 assign("z",z,.GlobalEnv)
                                                                 variableNames[k]<-paste(variableNames[k],"C", sep="")
                                                                 assign("variableNames",variableNames,.GlobalEnv)
@@ -204,36 +204,36 @@ clarifyVariableNames <- function (variableNames){
         }
         
         for(i in 1:length(tempVariableNames)){
-                print("E")
-                print("Outer2")
+                
+                
                 if(!grepl("[b][a][n][d][s][E][n][e][r][g][y]",variableNames[i])){
                         if(grepl("[G][y][r][o]",variableNames[i])){
-                                print("First2")
+                                
                                 x<-variableNames[i]
                                 assign("x",x,.GlobalEnv)
-                                print("G")
+                                
                                 variableNames[i]<-paste(variableNames[i],"A", sep="")
                                 assign("variableNames",variableNames,.GlobalEnv)
                                 
-                                print("H")
+                                
                                 for(j in 1:length(tempVariableNames)){
-                                        print("Middle2")
+                                        
                                         if(identical(variableNames[j],x)){
-                                                print("Second2")
+                                                
                                                 
                                                 y<-variableNames[j]
-                                                print("K")
+                                                
                                                 assign("y",y,.GlobalEnv)
                                                 variableNames[j]<-paste(variableNames[j],"B", sep="")
                                                 assign("variableNames",variableNames,.GlobalEnv)
                                                 
-                                                print("L")
+                                                
                                                 for(k in 1:length(tempVariableNames)){
-                                                        print("Inner2")
+                                                        
                                                         if(isTRUE(all.equal(variableNames[k],variableNames[j]))){
-                                                                print("Third2")
+                                                                
                                                                 z<-variableNames[k]
-                                                                print("M")
+                                                                
                                                                 assign("z",z,.GlobalEnv)
                                                                 variableNames[k]<-paste(variableNames[k],"C", sep="")
                                                                 assign("variableNames",variableNames,.GlobalEnv)
@@ -281,8 +281,8 @@ clarifyVariableNames <- function (variableNames){
         for(i in 1:length(variableNames)){
                 
                 #transform      
-                print("changed variable Name:")
-                print(variableNames[i])
+                
+                
                 variableNames[i]<-gsub("entropy","Decline", variableNames[i])
                 variableNames[i]<-gsub("arCoeff","Coeff", variableNames[i])
                 variableNames[i]<-gsub("^f","", variableNames[i])
@@ -326,81 +326,81 @@ clarifyVariableNames <- function (variableNames){
 getData("train/X_train.txt","features.txt","train/subject_train.txt", "train/y_train.txt", "activity_labels.txt")
 
 setActivityNamesByObs(tempActsByObs)
-print("nrow(tempActsByObs)")
-print(nrow(tempActsByObs))
+
+
 assign("tempActsByObs",tempActsByObs,.GlobalEnv)
-print("G")
+
 
 #Pass the observations, subjects by observation, and acts by observation data from temp to the appropriate data frames.
 observations<-tempObservations
 subjsByObs<-tempSubjsByObs
 actsByObs<-tempActsByObs
 
-print("actsByObs1:")
-print(actsByObs)
 
-print(class(observations))
-print(class(subjsByObs))
-print(class(actsByObs))
 
-print("observations length is: ")
-print(nrow(observations))
-print("subjsByObs length is: ")
-print(nrow(subjsByObs))
-print("actsByObs length is: ")
-print(nrow(actsByObs))
+
+
+
+
+
+
+
+
+
+
+
 
 getData("test/X_test.txt","features.txt","test/subject_test.txt", "test/y_test.txt", "activity_labels.txt")
 observations<-rbind(observations, tempObservations)
-print("M")
+
 subjsByObs<-rbind(subjsByObs, tempSubjsByObs)
-print("N")
 
 
-print("N1")
-print("nrow(actsByObs")
-print(nrow(actsByObs))
-print("nrow(tempActsByObs")
-print(nrow(tempActsByObs))
+
+
+
+
+
+
 
 actsByObs<-rbind(actsByObs, tempActsByObs)
-print("nrow(actsByObs)")
-print(nrow(actsByObs))
+
+
 setActivityNamesByObs(actsByObs)
 actsByObs<-data.frame(actsByObs)
 
-print("O")
-print("observations length is: ")
-print(nrow(observations))
-print("subjsByObs length is: ")
-print(nrow(subjsByObs))
-print(head(subjsByObs))
-print("actsByObs length is: ")
-print(nrow(actsByObs))
-print("actsByObs2:")
-print(head(actsByObs))
+
+
+
+
+
+
+
+
+
+
 
 #Execute the function which alters the variable names and pass it the current names.
 
 
 clarifyVariableNames(variableNames)
 #assign("variableNames",variableNames,.GlobalEnv)
-print(head(variableNames))
-print("K")
+
+
 
 combineObsVarsSubjsActs<-function(observations, variableNames, subjsByObs, actsByObs){
-        print("insideCombinObsVarsSubjs variableNames")
-        print(variableNames)
+        
+        
         colnames(observations)<-variableNames
-        print("Q")
+        
         assign("observations",observations,.GlobalEnv)
         colnames(subjsByObs)[1]<-"subjsByObs"
-        print("R")
+        
         subjsByObsIds<-as.character(subjsByObs$subjsByObs)
         assign("subjsByObsIds",subjsByObsIds,.GlobalEnv)
-        print("S")
+        
         colnames(actsByObs)[1]<-"actsByObs"
-        print("T")
+        
         actsByObs<-as.character(actsByObs$actsByObs)
         assign("actsByObs",actsByObs,.GlobalEnv)
         
@@ -415,18 +415,18 @@ observations<-cbind(actsByObs,observations)
 observations<-cbind(subjsByObsIds,observations)
 colnames(observations)<-c("subjsIds", "activities", variableNames)
 
-print("W")
+
 
 #install.packages("doBy")
 #require(doBy)
 summaryFunction <- function(x) c(means = mean(x)) 
-print("X")
 
-#print("observations")
-#print(observations)
+
+#
+#
 
 for (i in 1:length(variableNames)){
-        print("Y")
+        
         index<-i+2
         
         if(!file.exists("./tidyMerged")){dir.create("./tidyMerged")}
@@ -446,24 +446,24 @@ for (i in 1:length(variableNames)){
                 write.table(extractionMeanStdDev,paste("./tidyExtracted/", variableNames[i],".txt",sep=""),row.names=FALSE)
         }
         
-        print("Z")
+        
         if(!file.exists("./tidyAveraged")){dir.create("./tidyAveraged")}
         aggregatedMeasure<-summaryBy(measure ~ subjsByObsIds + actsByObs, data=measureToAggregate, FUN=summaryFunction)
-        print("AA")
+        
         colnames(aggregatedMeasure)<-c("subjIds", "activities", "means")
         names(aggregatedMeasure)
         aggregatedMeasure$subjIds<-as.numeric(as.character(aggregatedMeasure$subjIds))
         aggregatedMeasure <- aggregatedMeasure[order(aggregatedMeasure$subjIds, aggregatedMeasure$activities ) , ]
-        print("BB")
         
-        print("CC")
+        
+        
         write.table(aggregatedMeasure,paste("./tidyAveraged/", variableNames[i],".txt",sep=""),row.names=FALSE)
-        print("DD")
+        
         
         
         
 }
 
 write.table(variableNames,"tidyVariableNames.txt", sep=" ", quote=FALSE)         
-print("EE")
+
 
