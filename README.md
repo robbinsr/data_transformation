@@ -9,10 +9,19 @@ Run_analysis.R uses data that was collected using a personal activity device.
 
 The tasks that are performed by run_analysis.R are:
 
-Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Lying.
+1. Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Laying.
 
-Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
+2. Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
 activities performed by subjects, and variables captured or already created.
+
+3. Define a function that creates variable names that are more readable by a analyst.
+
+4. Execute the getData function and pass it the appropriate files related to training a statistical model based upon the data.
+
+5. Pass the observations, subjects by observation, and acts by observation data from temp to the appropriate data frames, which are data containers in R where R can perform actions on the data.
+
+6. Execute the function which alters the variable names and pass it the current names.
+
 
 
 The tidyCodeBook in xlsx and pdf form is in this repo.
