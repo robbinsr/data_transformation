@@ -1,7 +1,10 @@
 tidyData
 ========
 
-run_analysis.R is in this repo.
+This repository contains a file named run_analysis.R.
+Run_analysis.R is an executable script written in the R statistical language.
+Run_analysis.R performs the following actions.
+
 The tidyCodeBook in xlsx and pdf form is in this repo.
 This README explains my process.
 The merged files are in http://github.com/robbinsr/tidyMerged.
