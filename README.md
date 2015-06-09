@@ -5,7 +5,15 @@ This repository contains a file named run_analysis.R.
 
 Run_analysis.R is an executable script written in the R statistical language.
 
-Run_analysis.R performs the following actions.
+Run_analysis.R uses data that was collected using a personal activity device.
+
+The tasks that are performed by run_analysis.R are:
+
+Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Lying.
+
+Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
+activities performed by subjects, and variables captured or already created.
+
 
 The tidyCodeBook in xlsx and pdf form is in this repo.
 This README explains my process.
