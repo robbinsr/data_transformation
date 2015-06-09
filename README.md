@@ -22,7 +22,7 @@ The CodeBook, which shows the mapping between old variable names and new variabl
 
 The tasks that are performed by run_analysis.R are:
 
-#Merge the training and the test sets to create one data set.
+###Merge the training and the test sets to create one data set.
 
 The result of this effort is in the repo named "tidyMerged." The file run_analysis.R merges the following files ("features.txt", "activityunderscorelabels", "train/subjectunderscoretrain.txt", "train/yunderscoretrain.txt", test/subjectunderscoretest.text", "test/yunderscoretest.txt" and outputs 561 seperate files into the folder tidyMerged. Each file has three columns: one for indicating subject, one for indicating activity, and one for indicating the variable that is reported. Each file has 10,299 observations.
 
