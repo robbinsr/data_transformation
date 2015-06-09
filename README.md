@@ -5,35 +5,22 @@ This repository contains a file named run_analysis.R.
 
 Run_analysis.R is an executable script written in the R statistical language.
 
-Run_analysis.R uses data that was collected using a personal activity device.
+Run_analysis.R uses data that was collected using a personal activity device and collecting data from six persons' activities.
 
-The tasks that are performed by run_analysis.R are:
+The file run_analysis.R is in the tidyData folder.
 
-1. Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Laying.
-
-2. Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
-activities performed by subjects, and variables captured or already created.
-
-3. Define a function that creates variable names that are more readable by a analyst.
-
-4. Execute the getData function and pass it the appropriate files related to training a statistical model based upon the data.
-
-5. Pass the observations, subjects by observation, and acts by observation data from temp to the appropriate data frames, which are data containers in R where R can perform actions on the data.
-
-6. Execute the function which alters the variable names and pass it the current names.
-
-
-
-The tidyCodeBook in xlsx and pdf form is in this repo.
-This README explains my process.
+The results of running the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged.   
 The merged files are in http://github.com/robbinsr/tidyMerged.
+
 The extracted files are in http://github.com/robbinsr/tidyExtracted.
+
 The averaged files are in http://github.com/robbinsr/tidyAveraged.
+
 It was necessary to use more than one repo because of GitHub's 1 GB repo size constraint.
 
-This is the result of the project for the course "Getting and Cleaning Data." The CodeBook is in the tidyData folder. The file run_analysis.R is in the tidyData folder. The results of running the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged, and all of these are public and under github.com/robbinsr/.
+The CodeBook, which shows the mapping between old variable names and new variable names is in the tidyData folder.
 
-The instructions asked us to:
+The tasks that are performed by run_analysis.R are:
 
 ##Merge the training and the test sets to create one data set.
 
@@ -59,24 +46,40 @@ The result of this effort is in the tidyAveraged folder. This is within the run_
 
 ##The algorithm that was followed to transform the data was the following.
 
-1. Merge the two observation files. These were named "X_train.txt" and "X_test.txt" This led to an observations file that contained 561 columns and 10,299 observations. Each file was in its own directory, namely, train, and test.
+Merge the two observation files. These were named "X_train.txt" and "X_test.txt" This led to an observations file that contained 561 columns and 10,299 observations. Each file was in its own directory, namely, train, and test.
 
-2. Merge the two files that indicated the subject id affiliated with each of the 10,299 observations. These were named "y_train.txt" and "y_test.txt." Each file was in its own directory, namely, train, and test.
+Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Laying.
 
-3. Merge the two files that indicated the activity id affiliated with each of the 10,299 observations. These were named "subject_train.txt" but were in two different directories, namely, train, and test.
+Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
+activities performed by subjects, and variables captured or already created.
 
-4. Decode the activity ids by using the activity_labels.txt file.
+Define a function that creates variable names that are more readable by a analyst.
 
-5. Transform the cryptic feature names to more understandable variable names.
+Execute the getData function and pass it the appropriate files related to training a statistical model based upon the data.
 
-6. Attach a column to the beginning of the observations file which indicated an activity for each observation.
+Pass the observations, subjects by observation, and acts by observation data from temp to the appropriate data frames, which are data containers in R where R can perform actions on the data.
 
-7. Attach a column to the beginning of the observations file which indicated a subject for each observation.
+Execute the function which alters the variable names and pass it the current names.
 
-8. Slice the new observations file into 561 files, one for each variable, and place these into the tidyMerged folder/repo.
+Merge the two files that indicated the subject id affiliated with each of the 10,299 observations. These were named "y_train.txt" and "y_test.txt." Each file was in its own directory, namely, train, and test.
 
-9. Filter the tidyMerged files so that only those files that report means or standard deviations remain, and place these in the tidyExtracted folder/repo.
+Merge the two files that indicated the activity id affiliated with each of the 10,299 observations. These were named "subject_train.txt" but were in two different directories, namely, train, and test.
 
-10. Compute the mean of any variable, by subject id and activity, and place this in a new set of 561 files and place thse in the tidyAveraged folder/repo.
+Decode the activity ids by using the activity_labels.txt file.
 
+Transform the cryptic feature names to more understandable variable names.
+
+Attach a column to the beginning of the observations file which indicated an activity for each observation.
+
+Attach a column to the beginning of the observations file which indicated a subject for each observation.
+
+Slice the new observations file into 561 files, one for each variable, and place these into the tidyMerged folder/repo.
+
+Filter the tidyMerged files so that only those files that report means or standard deviations remain, and place these in the tidyExtracted folder/repo.
+
+Compute the mean of any variable, by subject id and activity, and place this in a new set of 561 files and place these in the tidyAveraged folder/repo.
+
+The tidyCodeBook in xlsx and pdf form is in this repo.
+
+This README explains my process.
 
