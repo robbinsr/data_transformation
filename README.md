@@ -1,13 +1,12 @@
 tidyData
 ========
 
-This repository contains X files.
+This repository contains 3 files and one folder.
 
 * rawDataDescription.md (describes the raw data that is transformed)
 * codeBook.pdf (describes changes in data labels)
 * run_analysis.R (R programming language code that performs the transformations)
-
-It also contains a directory that contains the raw data.
+* rawData (directory with rawData)
 
 The transformed data is in these GitHub repositories.
 
