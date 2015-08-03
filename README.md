@@ -1,46 +1,17 @@
 tidyData
 ========
 
-This repository contains a file named run_analysis.R and that file is in the tidyData folder.
+This repository contains a file named run_analysis.R. Run_analysis.R is an executable script written in the R statistical language. Run_analysis.R uses data that was collected using a personal activity (e.g., FitBit) device as six people exercised.
 
-Run_analysis.R is an executable script written in the R statistical language.
+Description of run_analysis.R
+-------------------------------
+The file run_analysis.R merges the following files ("features.txt", "activityunderscorelabels", "train/subjectunderscoretrain.txt", "train/yunderscoretrain.txt", test/subjectunderscoretest.text", "test/yunderscoretest.txt" and outputs 561 seperate files into the folder tidyMerged. Each file has three columns: one for indicating subject, one for indicating activity, and one for indicating the variable that is reported. Each file has 10,299 observations.
 
-Run_analysis.R uses data that was collected using a personal activity device and collecting data from six persons' activities.
+The file run_analysis.R takes then takes the merged files, filters for files that include the name "Mean" or "StdDev" and then places those files into the folder named tidyExtracted. The result of this effort is in the file named "tidyVariableNames" in this repo. The file run_analysis.R converts the names of the features provided in the semi-raw data to names that focus on the type of measurement as opposed to what the earlier analysts had done, which is focus on the measurement tool. Further, words were changed as necessary so that an English speaking person would be able to understand the type of measurement easily. Finally, punctuation marks that were previously embedded in the feature names were removed in the variable names.
 
-The file run_analysis.R is in the tidyData folder.
+The file run_analysis.R also computes the mean of all combinations of variable, subject id and activity, and places this in a new set of 561 files in the tidyAveraged folder/repo.
 
-The results of running the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged.   
-The merged files are in http://github.com/robbinsr/tidyMerged.
-
-The extracted files are in http://github.com/robbinsr/tidyExtracted.
-
-The averaged files are in http://github.com/robbinsr/tidyAveraged.
-
-It was necessary to use more than one repo because of GitHub's 1 GB repo size constraint.
-
-The CodeBook, which shows the mapping between old variable names and new variable names is in the tidyData folder.
-
-The tasks that are performed by run_analysis.R are:
-
-###Merge the training and the test sets to create one data set.
-
-The result of this effort is in the repo named "tidyMerged." The file run_analysis.R merges the following files ("features.txt", "activityunderscorelabels", "train/subjectunderscoretrain.txt", "train/yunderscoretrain.txt", test/subjectunderscoretest.text", "test/yunderscoretest.txt" and outputs 561 seperate files into the folder tidyMerged. Each file has three columns: one for indicating subject, one for indicating activity, and one for indicating the variable that is reported. Each file has 10,299 observations.
-
-###Extract only the measurements on the mean and standard deviation for each measurement.
-
-The result of this effort is in the repo named "tidyExtracted." The file run_analysis.R takes the merged files, filters for files that include the name "Mean" or "StdDev" and then places those files into the folder named tidyExtracted. 
-
-###Use descriptive activity names to name the activities in the data set.
-
-The result of this effort is in the file named "tidyVariableNames" in this repo. The file run_analysis.R converts the names of the features provided in the semi-raw data to names that focus on the type of measurement as opposed to what the earlier analysts had done, which is focus on the measurement tool. Further, words were changed as necessary so that an English speaking person would be able to understand the type of measurement easily. Finally, punctuation marks that were previously embedded in the feature names were removed in the variable names.
-
-###Label appropriately the data set with descriptive activity names.
-
-Each file is named using one of the tidy variable names. This is within the run_analysis.R file.
-
-###Create a second tidy data set with the average of each variable for each activity and each subject.
-
-The result of this effort is in the tidyAveraged folder. This is within the run_analysis.R file.
+The results of executing the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged. Variables have been renamed to make the data easier to use. A codebook, which provides the mapping between old variable names and new variable names is in the tidyData folder. The file run_analysis.R is in the tidyData folder.
 
 ********
 
