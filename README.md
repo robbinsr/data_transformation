@@ -15,4 +15,4 @@ The document that explains any changes in the labels of the data is named **code
 
 The transformed data is in the **tidy_merged** repository. See link below.
 
-* [tidy_merged](../tidy_merged)
+[tidy_merged!](./tidy_merged)
