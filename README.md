@@ -13,7 +13,7 @@ The document that explains any changes in the labels of the data is named **code
 
 The transformed data is in the **tidyMerged** repository.
 
-* http://github.com/tidyMerged
+* http://github.com/robbinsr/tidyMerged
 
 
 
