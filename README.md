@@ -1,27 +1,10 @@
 tidyData
 ========
 
-This repository contains raw data, a program used to transform that data into easier to use forms, and a codebook that describes variables.
+This repository contains raw data that was collected from six individuals whose physical actions were measured by a particular type of mobile phone. This repository also contains a program (run_analsis.R) that integrates, organizes, and summarizes the raw data. This repository contains a codebook that explains variable names.
 
-The program is in the file named run_analysis.R. The raw_data are in the 
-
-
-rawData
-------
-
-Description of run_analysis.R
--------------------------------
-The file run_analysis.R merges the following files ("features.txt", "activityunderscorelabels", "train/subjectunderscoretrain.txt", "train/yunderscoretrain.txt", test/subjectunderscoretest.text", "test/yunderscoretest.txt" and outputs 561 seperate files into the folder tidyMerged. Each file has three columns: one for indicating subject, one for indicating activity, and one for indicating the variable that is reported. Each file has 10,299 observations.
-
-The file run_analysis.R takes then takes the merged files, filters for files that include the name "Mean" or "StdDev" and then places those files into the folder named tidyExtracted. The result of this effort is in the file named "tidyVariableNames" in this repo. The file run_analysis.R converts the names of the features provided in the semi-raw data to names that focus on the type of measurement as opposed to what the earlier analysts had done, which is focus on the measurement tool. Further, words were changed as necessary so that an English speaking person would be able to understand the type of measurement easily. Finally, punctuation marks that were previously embedded in the feature names were removed in the variable names.
-
-The file run_analysis.R also computes the mean of all combinations of variable, subject id and activity, and places this in a new set of 561 files in the tidyAveraged folder/repo.
-
-The results of executing the run_analysis.R file are in three seperate repos named tidyMerged, tidyExtracted, and tidyAveraged. Variables have been renamed to make the data easier to use. A codebook, which provides the mapping between old variable names and new variable names is in the tidyData folder. The file run_analysis.R is in the tidyData folder.
-
-********
-
-###The algorithm that was followed to transform the data was the following.
+Algorithm in run_analysis.R:
+---------------------------
 
 Merge the two observation files. These were named "X_train.txt" and "X_test.txt" This led to an observations file that contained 561 columns and 10,299 observations. Each file was in its own directory, namely, train, and test.
 
