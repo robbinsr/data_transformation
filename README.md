@@ -1,7 +1,7 @@
 tidyData
 ========
 
-This repository contains 3 files and one folder.
+This repository contains three files and one folder.
 
 * rawDataDescription.md (describes the raw data that is transformed)
 * codeBook.pdf (describes changes in data labels)
