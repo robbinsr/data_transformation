@@ -1,11 +1,10 @@
 tidyData
 ========
 
-This repository is a parent repository for three other repositories, which contain transformed data. The data were collected from six people as they exercised. 
+This repository contains raw data, a program used to transform that data into easier to use forms, and a codebook that describes variables.
 
-tidyMerged
----------
-The tidyMerged repository contains easily analyzable files which include participants, measurement_labels, and measurement values.
+The program is in the file named run_analysis.R. The raw_data are in the 
+
 
 rawData
 ------
