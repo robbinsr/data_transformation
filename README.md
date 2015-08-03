@@ -1,7 +1,7 @@
 tidy_data
 ========
 
-You are now reading a document in the **tidy_data** repository (e.g., folder) on GitHub.com in a set of directories maintained by Russ Robbins.
+You are now reading the **README.md** document in the **tidy_data** repository (e.g., folder) on GitHub.com in a set of directories maintained by Russ Robbins.
 
 This repository contains data that was collected from thirty individuals whose physical actions were measured using a mobile phone that was attached to these participants. This data is in the folder named raw_data. The raw data and how it was collected is explained in the file named **raw_data_description.md** in the raw_data folder. 
 
