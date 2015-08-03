@@ -1,7 +1,14 @@
 tidyData
 ========
 
-This repository contains a file named run_analysis.R. Run_analysis.R is an executable script written in the R statistical language. Run_analysis.R uses data that was collected using a personal activity (e.g., FitBit) device as six people exercised.
+This repository is a parent repository for three other repositories, which contain organized data. The data are collected from six people as they exercised. tidyData contains three repositories. The most imporant to a user is tidyMerged.
+
+tidyMerged
+---------
+The tidyMerged repository contains easily analyzable files which include participants, measurement_labels, and measurement values.
+
+rawData
+------
 
 Description of run_analysis.R
 -------------------------------
