@@ -1,6 +1,22 @@
 tidyData
 ========
 
+This repository contains X files.
+
+* rawDataDescription.md (describes the raw data that is transformed)
+* codeBook.pdf (describes changes in data labels)
+* run_analysis.R (R programming language code that performs the transformations)
+
+It also contains a directory that contains the raw data.
+
+The transformed data is in these GitHub repositories.
+
+* http://github.com/tidyExtracted
+* http://github.com/tidyMerged
+* http://github.com/tityAveraged
+
+
+
 This repository contains raw data that was collected from thirty individuals whose physical actions were measured by a particular type of mobile phone. This repository also contains a program (run_analysis.R) that integrates, organizes, and summarizes the raw data. The purpose for making the data "tidy" is to make the data more understandable. This repository contains a codebook (tidyCodeBook.pdf) that explains any changes to data labels. 
 
 The algorithm performed in run_analysis.R is described below.
