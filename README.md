@@ -1,7 +1,7 @@
 tidyData
 ========
 
-This repository contains raw data that was collected from thirty individuals whose physical actions were measured by a particular type of mobile phone. This repository also contains a program (run_analysis.R) that integrates, organizes, and summarizes the raw data. The purpose for making the data "tidy" is to make the data more understandable. This repository contains a codebook (tidyCodeBook.xls, tidyCodeBook.pdf) that explains any changes to data labels. 
+This repository contains raw data that was collected from thirty individuals whose physical actions were measured by a particular type of mobile phone. This repository also contains a program (run_analysis.R) that integrates, organizes, and summarizes the raw data. The purpose for making the data "tidy" is to make the data more understandable. This repository contains a codebook (tidyCodeBook.pdf) that explains any changes to data labels. 
 
 The algorithm performed in run_analysis.R is described below.
 
