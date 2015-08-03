@@ -1,20 +1,22 @@
 tidyData
 ========
 
-This repository contains raw data that was collected from six individuals whose physical actions were measured by a particular type of mobile phone. This repository also contains a program (run_analysis.R) that integrates, organizes, and summarizes the raw data. The purpose for making the data "tidy" is to make the data more understandable. This repository contains a codebook (tidyCodeBook.xls, tidyCodeBook.pdf) that explains variable names. The algorithm performed in run_analysis.R is described below.
+This repository contains raw data that was collected from six individuals whose physical actions were measured by a particular type of mobile phone. This repository also contains a program (run_analysis.R) that integrates, organizes, and summarizes the raw data. The purpose for making the data "tidy" is to make the data more understandable. This repository contains a codebook (tidyCodeBook.xls, tidyCodeBook.pdf) that explains variable names. 
 
-Merge the two observation files. These were named "X_train.txt" and "X_test.txt" This led to an observations file that contained 561 columns and 10,299 observations. Each file was in its own directory, namely, train, and test.
+The algorithm performed in run_analysis.R is described below.
 
-Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Laying.
+* Merge the two observation files. These were named "X_train.txt" and "X_test.txt" This led to an observations file that contained 561 columns and 10,299 observations. Each file was in its own directory, namely, train, and test.
 
-Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
+* Change column/feature names from 1 through 6 to Walking, Walking Up Stairs, Walking Down Stairs, Standing, Sitting, and Laying.
+
+* Define a function that reads data about observations, subjects attached to observations, activities attached to observations,
 activities performed by subjects, and variables captured or already created.
 
-Define a function that creates variable names that are more readable by a analyst.
+* Define a function that creates variable names that are more readable by a analyst.
 
-Execute the getData function and pass it the appropriate files related to training a statistical model based upon the data.
+* Execute the getData function and pass it the appropriate files related to training a statistical model based upon the data.
 
-Pass the observations, subjects by observation, and acts by observation data from temp to the appropriate data frames, which are data containers in R where R can perform actions on the data.
+*  Pass the observations, subjects by observation, and acts by observation data from temp to the appropriate data frames, which are data containers in R where R can perform actions on the data.
 
 Execute the function which alters the variable names and pass it the current names.
 
