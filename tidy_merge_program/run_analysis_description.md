@@ -1,3 +1,16 @@
+The file run_analysis.R merges the following files 
+
+* features.txt
+* activityunderscorelabels
+* train/subjectunderscoretrain.txt
+* train/yunderscoretrain.txt
+* test/subjectunderscoretest.text
+* test/yunderscoretest.txt
+
+and outputs 561 seperate files into the folder tidyMerged. 
+
+Each file has three columns: one for indicating subject, one for indicating activity, and one for indicating the variable that is reported. Each file has 10,299 observations.
+
 The algorithm performed in run_analysis.R is described below.
 
 1. Merge the two observation files. These were named "X_train.txt" and "X_test.txt" This led to an observations file that contained 561 columns and 10,299 observations. Each file was in its own directory, namely, train, and test.
