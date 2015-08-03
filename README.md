@@ -1,7 +1,7 @@
 tidyData
 ========
 
-This repository is a parent repository for three other repositories, which contain organized data. The data are collected from six people as they exercised. tidyData contains three repositories. The most imporant to a user is tidyMerged.
+This repository is a parent repository for three other repositories, which contain transformed data. The data were collected from six people as they exercised. 
 
 tidyMerged
 ---------
