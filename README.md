@@ -11,5 +11,7 @@ The transformed data is in the **tidy_data** folder.
 
 The document that explains the transformation process in detail is **data_trans_doc.pdf**. 
 
+Select **data_transforamtion** above to continue.
+
 
 
